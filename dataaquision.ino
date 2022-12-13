@@ -1,4 +1,4 @@
-// this scirpt basically prints continuous stream of data on the LCD of m5 stack screen that can be copied to creat a csv file.
+// this scirpt basically prints continuous stream of data on the LCD of m5 stack screen that can be copied to creat a csv file which would then be used for machine learning.
 
 #include <M5Core2.h>
 
