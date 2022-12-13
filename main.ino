@@ -231,12 +231,13 @@ void loop() {
         // message detail
         message.subject = "Emergency";
         message.message = "Dear Serene your dearest friend xyz is having seizure. "; 
-        EMailSender::Response resp = emailSend.send("ssd9756@nyu.edu", message); 
+        EMailSender::Response resp = emailSend.send("ssd9756@nyu.edu", message);  // sending the email
+        // debuging section for email sending
         Serial.println("Sending status: ");
         Serial.println(resp.code);
         Serial.println(resp.desc); 
         Serial.println(resp.status);
-        buttonPressed = 'B';
+        buttonPressed = 'B'; // returning back to clock after detection 
       }
       }
     else{
